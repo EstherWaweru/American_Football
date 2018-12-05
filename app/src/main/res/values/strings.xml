@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">American_Football</string>
+    <string name="game">American Football League</string>
+    <string name="teamA">Oakland</string>
+    <string name="score_text">0</string>
+    <string name="reset_btn_text">Reset</string>
+    <string name="touchdown_point">Touchdown(+6)</string>
+    <string name="field_goal_point">FieldGoal(+3)</string>
+    <string name="conversion_point">Conversion(+1)</string>
+    <string name="safety_point">Safety(+2)</string>
+    <string name="score_btn">Score</string>
+    <string name="teamB">BlueVale</string>
+</resources>

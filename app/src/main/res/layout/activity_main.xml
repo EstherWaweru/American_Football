@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <TextView
+        style="@style/GameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/activity_textview_margin"
+        android:text="@string/game"
+        android:textAllCaps="true"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/GameText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_textview_margin"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/activity_textview_margin"
+                android:text="@string/teamA"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/scores_oakland"
+                style="@style/GameText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_layout_margin"
+                android:gravity="center_horizontal"
+                android:text="@string/score_text"
+                android:textSize="@dimen/score_text_size" />
+
+            <Button
+                android:id="@+id/touchdown_oakland"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_layout_margin"
+                android:text="@string/touchdown_point" />
+
+            <Button
+                android:id="@+id/field_goal_oakland"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_layout_margin"
+                android:text="@string/field_goal_point" />
+
+            <Button
+                android:id="@+id/conversion_oakland"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_layout_margin"
+                android:text="@string/conversion_point" />
+
+            <Button
+                android:id="@+id/safety_oakland"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_layout_margin"
+                android:text="@string/safety_point" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/GameText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_textview_margin"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/activity_textview_margin"
+                android:text="@string/teamB"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/scores_blueVale"
+                style="@style/GameText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_layout_margin"
+                android:gravity="center_horizontal"
+                android:text="@string/score_text"
+                android:textSize="@dimen/score_text_size" />
+
+            <Button
+                android:id="@+id/touchdown_blueVale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_layout_margin"
+                android:text="@string/touchdown_point" />
+
+            <Button
+                android:id="@+id/field_goal_blueVale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_layout_margin"
+                android:text="@string/field_goal_point" />
+
+            <Button
+                android:id="@+id/conversion_blueVale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_layout_margin"
+                android:text="@string/conversion_point" />
+
+            <Button
+                android:id="@+id/safety_blueVale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_layout_margin"
+                android:text="@string/safety_point" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reset_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/reset_btn_text" />
+
+</RelativeLayout>
